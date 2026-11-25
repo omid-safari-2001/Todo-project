@@ -18,8 +18,12 @@ body, html {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* کشیده شدن کارت در ارتفاع */
+  width: 100%;
+  max-width: 600px; /* اختیاری: برای محدود کردن عرض کارت */
+  margin: 0 auto;   /* وسط‌چین کردن کارت */
+  /* flex-grow: 1 حذف شد */
 }
+
 
 .todo-list li {
   margin-bottom: 8px;
@@ -38,3 +42,10 @@ body, html {
     padding: 15px;
   }
 }
+
+.todo-header-wrapper {
+  width: 100%;
+  max-width: 600px;  /* حداکثر عرض مثل کارت */
+  margin: 0 auto;    /* وسط‌چین کردن */
+}
+
